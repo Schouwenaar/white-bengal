@@ -1,0 +1,13 @@
+{
+  "name": "white-bengal",
+  "description": "White Bengal: a pastel pixel-art theme for Claude Code",
+  "owner": {
+    "name": "Schouwenaar"
+  },
+  "plugins": [
+    {
+      "name": "white-bengal",
+      "source": "./"
+    }
+  ]
+}

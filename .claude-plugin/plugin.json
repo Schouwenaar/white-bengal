@@ -1,0 +1,10 @@
+{
+  "name": "white-bengal",
+  "version": "0.1.0",
+  "description": "White Bengal theme for Claude Code: a pastel pixel-art backdrop with a white tiger, plus matching app colors",
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
+  "author": {
+    "name": "Schouwenaar"
+  }
+}

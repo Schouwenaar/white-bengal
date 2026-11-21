@@ -31,6 +31,31 @@ claude plugin install white-bengal --marketplace Schouwenaar/white-bengal
 
 Answer `y` to add the marketplace, then pick a scope (the user scope makes the theme load in every session). A theme installed from a terminal at the user scope also shows up in the desktop app.
 
+## Make it load every time
+
+The tiger and the prompt band are drawn by the plugin while a session runs, so they only show in sessions where the plugin is loaded. (The app can keep the colors from an earlier session, which is why you may see the colors without the tiger.)
+
+**For your whole account.** Install it once in the Claude desktop app as described above. Local sessions and new cloud sessions then load it.
+
+**For one repository, in the code.** Commit a `.claude/settings.json` like this to the repository's default branch. Every session opened on that repository, cloud sessions included, then installs and loads the theme by itself:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "white-bengal": {
+      "source": { "source": "github", "repo": "Schouwenaar/white-bengal" }
+    }
+  },
+  "enabledPlugins": {
+    "white-bengal@white-bengal": true
+  }
+}
+```
+
+If the repository already has a `.claude/settings.json`, add these two keys to it. This repository carries the same file, so sessions opened here load the theme too.
+
+The "New session" screen has no session yet, so it shows at most the colors; the tiger appears once the session starts.
+
 ## Notes
 
 - Only one theme can be active in a session. `/white-bengal off` clears the active theme, whichever mod set it.

@@ -1,0 +1,13 @@
+{
+  "enabledPlugins": {
+    "white-bengal@white-bengal": true
+  },
+  "extraKnownMarketplaces": {
+    "white-bengal": {
+      "source": {
+        "source": "github",
+        "repo": "Schouwenaar/white-bengal"
+      }
+    }
+  }
+}
